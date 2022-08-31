@@ -61,9 +61,6 @@ public class scepEnroll {
                 i++;
             }
 
-
-            Log.v("uSec", "sample");
-
             KeyPair requesterKeyPair = keyPairGenerator.genKeyPair();
             X500Principal requesterIssuer = new X500Principal(certificatesArray[1].getSubjectDN().getName());
             BigInteger serial = BigInteger.ONE;
@@ -103,7 +100,21 @@ public class scepEnroll {
 
 
             EnrollmentResponse res = client.enrol(requesterCert, requesterPrivKey, csr);
-//            client.enrol()
+
+            if(res.isSuccess())
+            {
+                Log.v("Scepoid", "Enrollment Successfull");
+            }
+
+            if(res.isPending())
+            {
+                Log.v("Scepoid", "Enrollment Pending");
+            }
+
+            if(res.isFailure())
+            {
+                Log.v("Scepoid", "Enrollment Failed");
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
