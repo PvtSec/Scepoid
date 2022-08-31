@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".InitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCEP URL" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/scep_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="http://192.168.11.146/ra-enrolment-api/v1/scep/4/pkiclient.exe"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Common Name"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/common_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android Device"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country Name"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/country_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="India"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State Name"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/state_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kerala"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Org Name"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/org_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="uSec.io"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Org Unit Name"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/org_unit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LCMS-RA"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enroll_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENROLL"/>
+
+</LinearLayout>
