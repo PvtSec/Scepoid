@@ -2,7 +2,7 @@
 [JSCEP](https://github.com/jscep/jscep) Implementation in Android
 
 ### Dependancy
-```json
+```
 dependencies {
 ...
 implementation 'com.google.code.jscep:jscep:2.5.4'
